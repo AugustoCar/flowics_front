@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang=”en”>
+<head>
+ <meta charset=”utf-8">
+ <title>Preguntas</title>
+</head>
+<body>
+ <div id=”app”>
+	<video id="video" autoplay="true" muted="muted" src="video\seinfield.mp4"></video>
+	<div id="preguntas">
+		<h2 id="preguntaTexto"></h2>
+		<div class="botones">
+			<button id="respuesta1" class="respuestas"></button>
+			<button id="respuesta2" class="respuestas"></button>
+		</div>
+	</div>
+    <div id ="quiz">
+        <!--<h2 id = "quizPregunta"></h2>
+        <h2 id = "quizRespuesta1"></h2>
+        <h2 id = "quizRespuesta2"></h2>-->
+        <div class = "game">
+            <textarea name="pregunta" id="" cols="20" rows="2"></textarea>
+            <textarea name="respuesta1" id="" cols="20" rows="2"></textarea>
+            <textarea name="respuesta2" id="" cols="20" rows="2"></textarea>
+        </div>
+        <div class="botones">
+            <button id="visibilidad" class="visibilidad"></button>
+			<button id="borrar" class="borrar"></button>
+            <button id="editar" class="editar"></button>
+        </div>
+    </div>
+ </div>
+ 
+ </div>
+</body>
+<script src="index.js"></script>
+<style>
+#video {
+	width: 1000px;
+}
+#preguntas {
+    border-radius: 10px;
+	position: relative;
+    bottom: 165px;
+    left: 10%;
+    width: 680px;
+    height: 120px;
+    opacity: 1;
+    background-color: #812f81;
+}
+#preguntaTexto {
+	text-align: center;
+    color: white;
+    padding-top: 15px;
+}
+.respuestas {
+	border-radius: 100px;
+    border: 0px;
+    width: 45%;
+    padding: 10px;
+    margin-left: 25px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+
+.respuestas:hover {
+	border-radius: 100px;
+    border: 0px;
+    width: 45%;
+    padding: 10px;
+    margin-left: 25px;
+    background-color: #877173;
+    color: black;
+    font-size: 20px;
+}
+.respuesta-correcta {
+    border-radius: 100px;
+    border: 0px;
+    width: 45%;
+    padding: 10px;
+    margin-left: 25px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+}
+.respuesta-incorrecta {
+	border-radius: 100px;
+    border: 0px;
+    width: 45%;
+    padding: 10px;
+    margin-left: 25px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+.botones {
+	display:flex;
+}
+#quiz {
+    border-radius: 10px;
+	position: relative;
+    margin-top: -700px;
+    left: 62%;
+    width: 619px;
+    height: 315px;
+    opacity: 1;
+    background-color: rgb(105, 104, 105);
+}
+#pregunta{
+	text-align: center;
+    color: white;
+    padding-top: 15px;
+}
+#respuesta1{
+	text-align: center;
+    color: white;
+    padding-top: 15px;
+}
+#respuesta2{
+	text-align: center;
+    color: white;
+    padding-top: 15px;
+}
+.visibilidad {
+	border-radius: 100px;
+    border: 0px;
+    width: 15%;
+    padding: 10px;
+    margin-top: 170px;
+    margin-left: 15px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+.borrar {
+	border-radius: 100px;
+    border: 0px;
+    width: 15%;
+    padding: 10px;
+    margin-top: 170px;
+    margin-left: 300px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+.editar {
+	border-radius: 100px;
+    border: 0px;
+    width: 15%;
+    padding: 10px;
+    margin-top: 170px;
+    margin-left: 15px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+</style>
+</html>
